@@ -73,7 +73,7 @@ public class test {
         SAXReader saxReader = new SAXReader();
         //2、给定需要读取的文件xml
 
-        File file = new File("/Users/jie/Documents/convert_xml/0312/FileDefinition_DAll.xml");
+        File file = new File("/Users/jie/Documents/convert_xml/0312/honor.xml");
 
         if (!file.exists()) {
             //  System.exit(0);结束程序
@@ -122,7 +122,7 @@ public class test {
             }
 
             //使用 Transformer 的 transform 方法把Dom树转换成  XML 文件
-            tf.transform(new DocumentSource(doc), new StreamResult(new File("/Users/jie/Documents/convert_xml/0312/FileDefinition_DAll_update_03_12.xml")));
+            tf.transform(new DocumentSource(doc), new StreamResult(new File("/Users/jie/Documents/convert_xml/0312/honor_update_03_12.xml")));
 
 
         } catch (DocumentException e) {
